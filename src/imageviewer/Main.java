@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -23,10 +24,10 @@ public class Main {
 
     private static void execute() {
         ImageLoader imageLoader = new FileImageLoader(("C:\\Users\\hecku\\Pictures"));
-        mainFrame mainframe = new mainFrame();
-        mainframe.add(new NextImageCommand(mainframe.getImageDispaly()));
-        mainframe.add(new PrevImageCommand(mainframe.getImageDispaly()));
-        mainframe.getImageDispaly().display(imageLoader.load());
+        mainFrame mainframe0 = new mainFrame();
+        mainframe0.add(new NextImageCommand(mainframe0.getImageDispaly()));
+        mainframe0.add(new PrevImageCommand(mainframe0.getImageDispaly()));
+        mainframe0.getImageDispaly().display(imageLoader.load());
     }
     
 }

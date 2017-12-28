@@ -44,7 +44,7 @@ public class mainFrame extends JFrame{
     private Component image() {
         swingImageDisplay display = new swingImageDisplay();
         imageDisplay = display;
-        return new swingImageDisplay();
+        return display;
     }
 
     public imageDisplay getImageDispaly() {
@@ -64,7 +64,7 @@ public class mainFrame extends JFrame{
         return button;
     }
 
-    private ActionListener execute(String name) {
+    private ActionListener execute(final String name) {
         return new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

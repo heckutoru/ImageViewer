@@ -31,7 +31,7 @@ public class FileImageLoader implements ImageLoader{
         return imageAt(0);
     }
     
-    private Image imageAt(int index){
+    private Image imageAt(final int index){
         return new Image() {
             @Override
             public byte[] bitmap() {
